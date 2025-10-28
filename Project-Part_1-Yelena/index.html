@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Project_Part1_Disneyland Paris</title>
+</head>
+<body>
+    <header class="disney-header">
+        <h1>Welcome to Disneyland Paris</h1>
+        <p>Come discovering the Disneyland Paris Park and immerse yourself in its magic !</p>
+        <img id="img-header" src="media/Magic.png" alt="Magic Castle">
+        <nav> 
+            <a href="#zone">Different Zones In The Park</a>
+            <a href="#attraction">Essential Attractions In The Park</a>
+            <a href="#special">Annual Special Events</a>
+        </nav>
+    </header>
+    <main>
+
+        <section id="zone">
+            <h1>Different Zones In The Park</h1>  
+            <p>Come discovering the diffrent park's zones and learning more about their specialities and atmosphere. 
+                Disneyland Paris contains two main parks. 
+                The first one, is the historic one : Disneyland Park. It's composed by four zones. 
+                The second one, is the moderne one : Walt Disney Studio Park. It's more based on the Pixar animation film
+            </p>
+
+        <section id="vue-app" class="vue-box">
+            <h2 v-if="showTitle">{{ items[index].title }}</h2>
+            <p v-else>{{ items[index].desc }}</p>
+            <img v-if="items[index].img" :src="items[index].img" :alt="items[index].title" class="vue-image">
+            <button @click="toggleText">Title 🔄 Description</button>
+            <button @click="prev">Previous</button>
+            <button @click="next">Next</button>
+        </section>
+
+            <p>Fisrt, let's discover the four lands of Disneyland Park !</p>
+            <section id="land">
+                <div class="land-section left">
+                  <div class="land-text">
+                    <h2>Fantasyland</h2>
+                    <img class="land-title-img" src="media/Fantasyland.png" alt="Fantasyland brand">
+                    <p>A magical world inspired by classic Disney stories. Amongst castles, carousels and colourful scenery, you will find gentle attractions such as It's a Small World, Peter Pan's Flight or Snow White. It's the perfect land for dreamers and their families.</p>
+                  </div>
+                  <div class="land-img">
+                    <img src="media/Fantasyland picture.png" alt="Fantasyland picture">
+                  </div>
+                </div>
+              
+                <div class="land-section right">
+                  <div class="land-text">
+                    <h2>Adventureland</h2>
+                    <img class="land-title-img" src="media/Adventureland.png" alt="Adventureland brand">
+                    <p>An exotic setting inspired by jungles, pirates and explorers. Here you will find Pirates of the Caribbean, Indiana Jones and Robinson's Cabin. A mysterious atmosphere full of adventure.</p>
+                  </div>
+                  <div class="land-img">
+                    <img src="media/Adventureland picture.png" alt="Adventureland picture">
+                  </div>
+                </div>
+              
+                <div class="land-section left">
+                  <div class="land-text">
+                    <h2>Frontierland</h2>
+                    <img class="land-title-img" src="media/Frontierland.png" alt="Frontierland brand">
+                    <p>Immersed in the atmosphere of the Wild West, this land recreates a pioneer town with saloons, gold mines and cowboys. It's home to Big Thunder Mountain and Phantom Manor, two of the park's most iconic attractions.</p>
+                  </div>
+                  <div class="land-img">
+                    <img src="media/Frontierland picture.png" alt="Frontierland picture">
+                  </div>
+                </div>
+              
+                <div class="land-section right">
+                  <div class="land-text">
+                    <h2>Discoveryland</h2>
+                    <img class="land-title-img" src="media/Discoveryland.png" alt="Discoveryland brand">
+                    <p>A futuristic land combining science fiction and time travel. With Star Wars Hyperspace Mountain, Buzz Lightyear Laser Blast and Autopia, it's the perfect place for fans of technology and space.</p>
+                  </div>
+                  <div class="land-img">
+                    <img src="media/Discoveryland picture.png" alt="Discoveryland picture">
+                  </div>
+                </div>
+            </section>
+
+                <p>Now that we have explored Disneyland Park, let us set off to discover Walt Disney Studio Park !</p>
+
+            <section id="studio">
+                <h2>Walt Disney Studio Park</h2>
+                <img src="media/Studios entrance.png" alt="Studios entrance">
+                <p>This second Disneyland Paris park takes visitors behind the scenes of cinema and animation. 
+                    It offers immersive attractions such as Ratatouille: The Totally Crazy Adventure of Remy, Crush's Coaster and Avengers Assemble: Flight Force. 
+                    The atmosphere is more modern, with an emphasis on Pixar, Marvel and Disney films. 
+                    A major new addition is in the works: a land dedicated to Frozen is currently under construction, promising total immersion in the kingdom of Arendelle.
+                </p>
+                <img src="media/Studios picture.png" alt="Studios park pictures">
+            </section>
+        </section>
+
+        <section id="attraction">
+            <h1>Essential Attractions In The Park</h1>
+            <p>Disneyland Paris is packed with iconic attractions to suit all tastes. 
+                From thrilling adventures such as Pirates of the Caribbean, Big Thunder Mountain and Star Wars Hyperspace Mountain to gentler, more magical experiences such as It's a Small World and Ratatouille, 
+                every visitor is guaranteed an unforgettable experience.
+            </p>
+
+            <div id="It's a Small World">
+                <h2>It's a Small World</h2>
+                <p>A boat ride across the continents, accompanied by a catchy song and colourful scenery representing cultures from around the world. 
+                    A gentle attraction full of good cheer.
+                </p>
+                <img src="media/It's a small world.png" alt="Dolls">
+            </div>
+
+            <div id="Pirates of the Caribbean">
+                <h2>Pirates of the Caribbean</h2>
+                <p>Embark on an adventure into the heart of a pirate world: cannons, treasures, ships and a mysterious atmosphere await you in this immersive, cult attraction.
+                </p>
+                
+                <img src="media/Pirates.png" alt="Pirates of the caribbean">
+                <p>💰 Did you know that it was this Disneyland Paris attraction that inspired the films, and not the other way around ?</p>
+            </div>
+
+            <div id="Big Thunder mountain">
+                <h2>Big Thunder mountain</h2>
+                <p>Climb aboard a mine train hurtling at full speed through a Wild West setting. 
+                    It is one of the park's most popular attractions, offering thrills and impressive scenery.
+                </p>
+                <img src="media/Big Thunder Mountain.png" alt="Big Thunder Mountain">
+            </div>
+
+            <div id="Star Wars Hyperspace Mountain">
+                <h2>Star Wars Hyperspace Mountain</h2>
+                <p>Get ready for a galactic mission alongside the Rebel Alliance. 
+                    This indoor roller coaster combines speed, loops and Star Wars atmosphere for an intense experience.
+                </p>
+                <img src="media/Space mountain.png" alt="Star Wars">
+            </div>
+
+            <div id="Ratatouille">
+                <h2>Ratatouille</h2>
+                <p>Shrunk to the size of a rat, you follow Rémy through Gusteau's kitchens in an immersive and entertaining 4D attraction, 
+                    perfect for the whole family.
+                </p>
+                <img src="media/Ratatouille.png" alt="Ratatouille">
+            </div>
+        </section>
+
+        <section id="special">
+            <h1>Annual Special Events</h1>
+            <p>Two seasons completely transform the atmosphere of the park each year. 
+                At Halloween, pumpkins, ghosts and Disney villains invade the paths, creating a mysterious and fun atmosphere with unique decorations and exclusive shows. 
+                In December, the magic of Christmas takes over: giant Christmas trees, illuminations, festive music and winter parades immerse visitors in an enchanted fairy tale.
+            </p>
+
+            <div id="Halloween">
+                <h2>Halloween</h2>
+                <p>Every autumn, Disneyland Paris dons its most beautiful spooky decorations to celebrate Halloween. 
+                    Pumpkins, spider webs and lanterns fill the paths, while Disney Villains take centre stage for unforgettable encounters. 
+                    Exclusive shows and entertainment give the park a mysterious yet fun atmosphere, perfect for thrilling visitors... with a smile.
+                </p>
+                <img src="media/Halloween.png" alt="Halloween">
+            </div>
+
+            <div id="Christmas">
+                <h2>Christmas</h2>
+                <p>From November onwards, the magic of Christmas transforms the park into a truly enchanted village. 
+                    Fairy lights adorn every street, a huge Christmas tree stands proudly at the entrance, and festive music accompanies visitors throughout their day. 
+                    Christmas parades, snow falling on Main Street, and Disney characters dressed in winter clothes make this one of the most magical times of the year.
+                </p>
+                <img src="media/Christmas.png" alt="Christmas">
+            </div>
+        </section>
+    </main>
+    <footer class="disney-footer">
+        <p>✨ Project - Part 1 - made by Yéléna SAINTE-ROSE BRUNY ✨</p>  
+    </footer>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script src="data/data.js"></script>
+
+<script>
+  const { createApp } = Vue;
+
+  createApp({
+    data() {
+      return {
+        index: 0,
+        showTitle: true,
+        items: dataItems 
+      };
+    },
+    methods: {
+      toggleText() {
+        this.showTitle = !this.showTitle;
+      },
+      next() {
+        this.index = (this.index + 1) % this.items.length;
+        this.showTitle = true;
+      },
+      prev() {
+        this.index = (this.index - 1 + this.items.length) % this.items.length;
+        this.showTitle = true;
+      }
+    }
+  }).mount('#vue-app');
+</script>
+</body>
+</html>

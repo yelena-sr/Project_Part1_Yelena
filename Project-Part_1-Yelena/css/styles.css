@@ -1,0 +1,300 @@
+
+body {
+    background: linear-gradient(to bottom right, #fff1f9, #e0f7ff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+ 
+  h1, h2 {
+    text-align: center;
+    color: #a352c2;
+    margin: 20px 0;
+  }
+  
+ 
+  section {
+    background-color: #ffffffcc;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 1200px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  section img {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .land-title-img {
+    max-width: 200px;
+    margin: 10px auto 20px;
+    display: block;
+    box-shadow: none;
+    border-radius: 10px;
+  }
+  
+ 
+  #land {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+  
+  #land > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    max-width: 1100px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  #land > div:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  #land h2 {
+    color: #a352c2;
+    margin-bottom: 10px;
+  }
+  
+  #land p {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.05em;
+  }
+  
+  #land > div:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  
+  #land img:last-of-type {
+    max-width: 400px;
+    border-radius: 15px;
+  }
+  
+  
+  @media (max-width: 900px) {
+    #land > div {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #land img:last-of-type {
+      max-width: 90%;
+    }
+  }
+  
+  
+  .disney-header {
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    padding: 30px 15px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .disney-header h1 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .disney-header a {
+    display: inline-block;
+    color: #fff;
+    background: #a352c2;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .disney-header a:hover {
+    background: #8b42aa;
+  }
+  
+  
+  .disney-footer {
+    background: linear-gradient(to right, #8ec5fc, #e0c3fc);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    font-size: 0.95em;
+    border-top: 5px solid #ffccff;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .disney-footer a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .disney-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .vue-box {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px 20px;
+    background: linear-gradient(to bottom right, #ffe6fa, #e0f7ff);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .vue-box h2 {
+    color: #a352c2;
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
+  .vue-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  
+  .vue-box img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .vue-box button {
+    background: #ffb7ec;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vue-box button:hover {
+    background: #e67cc6;
+  }
+  
+  
+  .vue-box.fantasyland {
+    background: linear-gradient(to bottom right, #ffe6ff, #e8e0ff);
+  }
+  .vue-box.adventureland {
+    background: linear-gradient(to bottom right, #d4fff9, #fff5d1);
+  }
+  .vue-box.frontierland {
+    background: linear-gradient(to bottom right, #fff3e0, #ffe0e0);
+  }
+  .vue-box.discoveryland {
+    background: linear-gradient(to bottom right, #e0f2ff, #e0ffe6);
+  }
+  
+  
+  @media (max-width: 768px) {
+    section {
+      padding: 20px;
+      margin: 20px auto;
+    }
+  
+    h1, h2 {
+      font-size: 1.4em;
+    }
+  
+    p {
+      font-size: 1em;
+    }
+  
+    .disney-header a {
+      display: block;
+      margin: 10px auto;
+    }
+  
+    #land > div {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #land img:last-of-type {
+      max-width: 90%;
+    }
+  }
+
+
+  #img-header {
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    margin: 40px auto 20px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    border: 4px solid #e8c7ff;
+    transition: transform 0.3s ease;
+  }
+  
+  #img-header:hover {
+    transform: scale(1.02);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  
+body, p, section, .disney-text {
+    font-family: 'Comic Neue', 'Segoe UI', cursive, sans-serif;
+    color: #4b0082; 
+    font-size: 1.1em;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    padding: 0 30px;
+  }
+  
+ 
+  h2 {
+    font-family: 'Comic Neue', 'Segoe UI', cursive, sans-serif;
+    color: #7a42f4;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  }
+
+ 
+  header, footer {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #e0bbff, #a3d5ff);
+    color: #fff;
+    text-align: center;
+  }
